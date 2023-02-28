@@ -22,6 +22,7 @@ services:
   
   socat:
     image: alpine/socat
+    container_name: socat
     command: tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
     networks:
       - jenkins

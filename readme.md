@@ -71,3 +71,4 @@ Execute command to create and run container from Dockerfile
 ```
 docker compose up -d
 ```
+Remember extract ip from container socat and CSRF disable it on Jenkins configuration.
