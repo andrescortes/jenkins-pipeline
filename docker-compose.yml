@@ -19,6 +19,14 @@ services:
       - "50000:50000"
     networks:
       - jenkins
+  
+  socat:
+    image: alpine/socat
+    command: tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
+    networks:
+      - jenkins
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
 
 volumes:
   jenkins-data:

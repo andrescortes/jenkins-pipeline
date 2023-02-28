@@ -63,3 +63,11 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+## New configuration and update versions
+
+Created a docker-compose.yml file
+
+Execute command to create and run container from Dockerfile
+```
+docker compose up -d
+```
